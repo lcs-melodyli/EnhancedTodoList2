@@ -8,18 +8,47 @@
 
 /* Begin PBXFileReference section */
 		21B084212CE3B7D1007ADEF1 /* EnhancedTodoList2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnhancedTodoList2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FF4FE42CE3BCDB0005600D /* EnhancedTodolistIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnhancedTodolistIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		21FF4FF62CE3BD1C0005600D /* Exceptions for "EnhancedTodoList2" folder in "EnhancedTodolistIOS" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				View/LandingView.swift,
+				View/StatisticsView.swift,
+				View/TodolistView.swift,
+				ViewModels/TodoItem.swift,
+			);
+			target = 21FF4FE32CE3BCDB0005600D /* EnhancedTodolistIOS */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		21B084232CE3B7D1007ADEF1 /* EnhancedTodoList2 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				21FF4FF62CE3BD1C0005600D /* Exceptions for "EnhancedTodoList2" folder in "EnhancedTodolistIOS" target */,
+			);
 			path = EnhancedTodoList2;
+			sourceTree = "<group>";
+		};
+		21FF4FE52CE3BCDB0005600D /* EnhancedTodolistIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EnhancedTodolistIOS;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		21B0841E2CE3B7D1007ADEF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FF4FE12CE3BCDB0005600D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				21B084232CE3B7D1007ADEF1 /* EnhancedTodoList2 */,
+				21FF4FE52CE3BCDB0005600D /* EnhancedTodolistIOS */,
 				21B084222CE3B7D1007ADEF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				21B084212CE3B7D1007ADEF1 /* EnhancedTodoList2.app */,
+				21FF4FE42CE3BCDB0005600D /* EnhancedTodolistIOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +101,28 @@
 			productReference = 21B084212CE3B7D1007ADEF1 /* EnhancedTodoList2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		21FF4FE32CE3BCDB0005600D /* EnhancedTodolistIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FF4FEF2CE3BCDD0005600D /* Build configuration list for PBXNativeTarget "EnhancedTodolistIOS" */;
+			buildPhases = (
+				21FF4FE02CE3BCDB0005600D /* Sources */,
+				21FF4FE12CE3BCDB0005600D /* Frameworks */,
+				21FF4FE22CE3BCDB0005600D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				21FF4FE52CE3BCDB0005600D /* EnhancedTodolistIOS */,
+			);
+			name = EnhancedTodolistIOS;
+			packageProductDependencies = (
+			);
+			productName = EnhancedTodolistIOS;
+			productReference = 21FF4FE42CE3BCDB0005600D /* EnhancedTodolistIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -81,6 +134,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					21B084202CE3B7D1007ADEF1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					21FF4FE32CE3BCDB0005600D = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -100,6 +156,7 @@
 			projectRoot = "";
 			targets = (
 				21B084202CE3B7D1007ADEF1 /* EnhancedTodoList2 */,
+				21FF4FE32CE3BCDB0005600D /* EnhancedTodolistIOS */,
 			);
 		};
 /* End PBXProject section */
@@ -112,10 +169,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21FF4FE22CE3BCDB0005600D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		21B0841D2CE3B7D1007ADEF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FF4FE02CE3BCDB0005600D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,6 +364,69 @@
 			};
 			name = Release;
 		};
+		21FF4FF02CE3BCDD0005600D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnhancedTodolistIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UG443984D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.melodyli.EnhancedTodolistIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21FF4FF12CE3BCDD0005600D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnhancedTodolistIOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UG443984D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.melodyli.EnhancedTodolistIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +444,15 @@
 			buildConfigurations = (
 				21B084312CE3B7D4007ADEF1 /* Debug */,
 				21B084322CE3B7D4007ADEF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FF4FEF2CE3BCDD0005600D /* Build configuration list for PBXNativeTarget "EnhancedTodolistIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FF4FF02CE3BCDD0005600D /* Debug */,
+				21FF4FF12CE3BCDD0005600D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
